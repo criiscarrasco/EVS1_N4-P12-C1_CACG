@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from cacg_appUno import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('vistaUno/', admin.site.urls),
-    path('vistaDos/', admin.site.urls),
+    path('vistaUno/', views.vistaUno),
+    path('vistaDos/', views.vistaDos),
 ]
